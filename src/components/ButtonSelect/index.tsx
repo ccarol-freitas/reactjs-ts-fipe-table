@@ -25,11 +25,9 @@ const ButtonSelect = (): any => {
   }, []);
   return (
     <>
-      {brandDatas.map((item, index) => {
-        <Select native={true} data-testid="my-wrapper" defaultValue="1">
-          <option key={index}></option>
-        </Select>;
-      })}
+      <Select native={true} data-testid="my-wrapper" defaultValue="1">
+        <option></option>
+      </Select>
     </>
   );
 };
