@@ -13,11 +13,12 @@
 ### Features
 
 - [ ] Consumir a API Tabela Fipe
-- [ ] Realizar a busca de um veículo 
-- [ ] Criar component Select
-- [ ] Criar component Search Button
-- [ ] Criar página de busca
-- [ ] Criar página de resultado
+- [ ] Realizar a busca de um veículo 	
+- [ ] Criar lógica de busca
+- [x] Criar component Select
+- [x] Criar component Search Button
+- [x] Criar página de busca
+- [x] Criar página de resultado
 
 
 ### Pré-requisitos
