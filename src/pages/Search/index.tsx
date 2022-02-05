@@ -9,8 +9,6 @@ const Search = (): any => {
       <h3>Consulte o valor de um veículo de forma gratuita</h3>
       <Content>
         <ButtonSelect />
-        <ButtonSelect />
-        <ButtonSelect />
         <ButtonConsult />
       </Content>
     </Container>

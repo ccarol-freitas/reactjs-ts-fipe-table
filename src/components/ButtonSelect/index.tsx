@@ -2,22 +2,16 @@ import { Select } from "@mui/material";
 import { useEffect, useState } from "react";
 import useCarBrand from "../../hooks/UseCarBrand";
 
-const ButtonSelect = (): any => {
-  const [brandDatas, setBrandDatas] = useState([{}]);
+const ButtonSelect = () => {
+  const [brands, setBrands] = useState([]);
 
   const { response } = useCarBrand();
 
   useEffect(() => {
     response()
       .then((data) => {
-        if (data) {
-          setBrandDatas(
-            data.map(() => {
-              // console.log("-->", item.nome);
-              // console.log("--=", item.codigo);
-            })
-          );
-        }
+        setBrands(data);
+        console.log("..", data);
       })
       .catch((err) => {
         console.log(err);
@@ -26,7 +20,12 @@ const ButtonSelect = (): any => {
   return (
     <>
       <Select native={true} data-testid="my-wrapper" defaultValue="1">
-        <option></option>
+        {console.log(brands)}
+        {brands.map((brand) => {
+          <option key={brand.codigo} value={brand.nome}>
+            {brand.nome}
+          </option>
+        })}
       </Select>
     </>
   );

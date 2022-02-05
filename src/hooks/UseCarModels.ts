@@ -8,7 +8,6 @@ const useCarModels = async () => {
     if (!data) {
       console.error("Ocorreu um erro em modelos!");
     }
-    console.log("sucesso modelos", data)
     return data;
   } catch (error) {
     console.error(error);

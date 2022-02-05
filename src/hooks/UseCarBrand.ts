@@ -8,7 +8,7 @@ const useCarBrand = async () => {
     if (!data) {
       console.error("Ocorreu um erro em marcas!");
     }
-    console.log("sucesso marcas", data);
+    console.log("-->", data);
     return data;
   } catch (error) {
     console.error(error);

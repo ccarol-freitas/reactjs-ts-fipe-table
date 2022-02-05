@@ -8,7 +8,6 @@ const useCarYear = async () => {
     if (!data) {
       console.error("Ocorreu um erro em anos!");
     }
-    console.log("sucesso anos", data);
     return data;
   } catch (error) {
     console.error(error);
