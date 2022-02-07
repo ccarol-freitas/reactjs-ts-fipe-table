@@ -4,11 +4,11 @@ import api from "../service/api";
 const useCarBrand = async () => {
   try {
     const response = await api.get("/marcas");
+
     const { data } = response;
     if (!data) {
       console.error("Ocorreu um erro em marcas!");
     }
-    console.log("-->", data);
     return data;
   } catch (error) {
     console.error(error);

@@ -3,8 +3,8 @@ import api from "../service/api";
 
 const useCarYear = async () => {
   try {
-    const res = await api.get("/marcas/59/modelos/5940/anos");
-    const { data } = res;
+    const response = await api.get(`/marcas/59/modelos/5940/anos`);
+    const { data } = response;
     if (!data) {
       console.error("Ocorreu um erro em anos!");
     }
@@ -15,11 +15,11 @@ const useCarYear = async () => {
 };
 
 const useCarYearResultsData = () => {
-  const res = useCallback(async () => {
+  const response = useCallback(async () => {
     const data = await useCarYear();
     return data;
   }, [useCarYear]);
-  return { res };
+  return { response };
 };
 
 export default useCarYearResultsData;

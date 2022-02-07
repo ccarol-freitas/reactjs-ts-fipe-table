@@ -30,9 +30,17 @@ export const Content = styled.div`
   border-radius: 8px;
   width: 100%;
   max-width: 444px;
-  height: 192px;
+  height: 100%;
+  min-height: 192px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 30px 45px;
+
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
 `;
