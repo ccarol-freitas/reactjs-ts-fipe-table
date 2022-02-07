@@ -12,7 +12,7 @@
 
 ### Features
 
-- [ ] Consumir a API Tabela Fipe
+- [x] Consumir a API Tabela Fipe
 - [ ] Realizar a busca de um veículo 	
 - [ ] Criar lógica de busca
 - [x] Criar component Select
