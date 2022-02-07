@@ -16,12 +16,21 @@ export const Container = styled.div`
   }
 
   h3 {
-    color: #4b4b4b;
+    color: #424242;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
+    font-size: 20px;
+    margin-top: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  h4{
+    color: #757575 ;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-style: normal;
-    line-height: 30px;
+    margin-top: 4px;
+    font-weight: 400;
+    line-height: 26px;
   }
 
   span {
@@ -33,7 +42,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
 
-    color: #ffff;
+    color: #fff ;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 16px;
@@ -42,7 +51,7 @@ export const Container = styled.div`
   }
 
   p {
-    color: #6f6f6f;
+    color: #757575;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-size: 11px;

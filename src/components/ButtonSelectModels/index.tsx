@@ -18,7 +18,7 @@ const ButtonSelectModels = () => {
   useEffect(() => {
     response()
       .then((data) => {
-        setModels(data);
+        setModels(data.modelos);
       })
       .catch((err) => {
         console.log(err);
@@ -28,15 +28,17 @@ const ButtonSelectModels = () => {
     <>
       <Select
         native={true}
-        data-testid='my-wrapper'
-        defaultValue='1'
+        data-testid="my-wrapper"
+        defaultValue="1"
         onChange={() => {
           setShowFieldYears(!showFieldYears);
         }}
       >
-        <option>Teste</option>
-        <option>Teste</option>
-        <option>Teste</option>
+        {models.map((model, index) => (
+          <option key={index} value={model.nome} id={model.codigo}>
+            {model.nome}
+          </option>
+        ))}
       </Select>
     </>
   );

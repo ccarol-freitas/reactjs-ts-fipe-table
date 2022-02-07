@@ -31,10 +31,8 @@ export const Content = styled.div`
   width: 100%;
   max-width: 444px;
   height: 100%;
-  min-height: 192px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 30px 45px;
 
   div {

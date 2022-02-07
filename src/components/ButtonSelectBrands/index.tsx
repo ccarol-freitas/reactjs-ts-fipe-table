@@ -32,7 +32,7 @@ const ButtonSelectBrands = () => {
         defaultValue='1'
         onChange={(e) => {
           setShowFieldModels(!showFieldModels);
-          console.log(e.target.value);
+          // console.log(e.target.value);
         }}
       >
         {brands.map((brand, index) => (

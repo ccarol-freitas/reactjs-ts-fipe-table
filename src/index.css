@@ -170,3 +170,12 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #e5e5e5;
 }
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root:disabled {
+  background-color: #e5e5e5 !important;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  background-color: #7600fc !important;
+  color: #fff !important;
+}

@@ -7,6 +7,7 @@ const ButtonConsult = (): any => {
     window.location.pathname = "/result";
   };
 
+
   const { activeField } = useContext(ContextShowFields);
 
   return (

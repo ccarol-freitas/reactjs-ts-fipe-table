@@ -5,8 +5,9 @@ const Result = (): any => {
     <>
       <Container>
         <div>
-          <h3>Tabela Fipe: Preço car.name</h3>
-          <span>R$ 91.618</span>
+          <h3>Tabela Fipe: Preço Citroën Berlingo 2007</h3>
+          <h4>Multispace GLX 1.6 16V</h4>
+          <span>R$ 18.996</span>
           <p>Esse é o preço da compra do veículo</p>
         </div>
       </Container>
